@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30.6, 67.4%, 90.9%);
+}
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./components/images/homepage.png);
+  background-size: cover;
+}
+
+.hero-slogan,
+.hero-slogan-subtitle {
+  color: hsl(30.6, 67.4%, 90.9%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 85px;
+  position: absolute;
+  top: 195px;
+  left: 50px;
+  filter: drop-shadow(2px 4px 6px rgb(218, 164, 93));
+}
+
+.hero-slogan-subtitle {
+  font-size: 25px;
+  top: 465px;
+  filter: drop-shadow(2px 4px 6px rgb(190, 151, 109));
+}
+
+.hero-slogan-contact-btn {
+  position: absolute;
+  top: 520px;
+  left: 185px;
+  color: hsl(31, 38%, 49%);
+  background-color: hsl(30.6, 67.4%, 90.9%);
+}
+
+.hero-slogan-book-btn {
+  position: absolute;
+  top: 520px;
+  left: 50px;
+  padding: 8px 25px;
+}
+
+.hero-image {
+  height: 95vh;
+  width: 100vw;
+}
+
+.navbar-logoimg {
+  height: 150px;
+  width: 250px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    /* background-image: url(./components/images/); */
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+  }
+  .hero-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-slogan {
+    font-size: 35px;
+    top: 332px;
+  }
+
+  .hero-slogan-subtitle {
+    font-size: 16px;
+    top: 430px;
+  }
+
+  .hero-slogan,
+  .hero-slogan-subtitle {
+    filter: drop-shadow(2px 4px 6px rgb(190, 151, 109));
+  }
+}
